@@ -23,21 +23,23 @@ public class BasicCalculator {
         myScanner.nextLine();
         String operation = myScanner.nextLine();
         double result = 0;
-        if (operation.equals("a")){
-            System.out.println("We will add these!");
-            result = num1 + num2;
-        }
-        else if (operation.equals("s")){
-            System.out.println("We will subtract these!");
-            result = num1 - num2;
-        }
-        else if (operation.equals("m")){
-            System.out.println("We will multiply these!");
-            result = num1 * num2;
-        }
-        else if (operation.equals("d")){
-            System.out.println("We will divide these!");
-            result = num1 / num2;
+        switch (operation) {
+            case "a" -> {
+                System.out.println("We will add these!");
+                result = num1 + num2;
+            }
+            case "s" -> {
+                System.out.println("We will subtract these!");
+                result = num1 - num2;
+            }
+            case "m" -> {
+                System.out.println("We will multiply these!");
+                result = num1 * num2;
+            }
+            case "d" -> {
+                System.out.println("We will divide these!");
+                result = num1 / num2;
+            }
         }
         System.out.println("The result was: " + result);
 
