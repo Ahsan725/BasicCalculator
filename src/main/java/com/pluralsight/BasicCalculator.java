@@ -10,7 +10,6 @@ public class BasicCalculator {
         num1 = myScanner.nextDouble();
         System.out.println("Enter the 2nd num: ");
         num2 = myScanner.nextDouble();
-        System.out.println(num1 + " " + num2);
 
         System.out.println("""
                 Possible calculations:
